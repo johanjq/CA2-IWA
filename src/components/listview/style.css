@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+    border: 0.1em solid rgb(139, 139, 139);
+    border-radius: 1em;
+    padding: 1.3em 2em;
+    margin: 1em;
+    margin-left: 8em;
+    width: 50%;
+    text-align: center;
+
+}
+a:visited{
+    color: inherit
+}
+a{
+    color: inherit
+}
