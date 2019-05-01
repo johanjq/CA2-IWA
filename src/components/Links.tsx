@@ -6,7 +6,7 @@ export class Links extends React.Component {
 
 
   public render() {
-    const listComponents = links.map((item: any) => <ListView links={item}/>)
+    const listComponents = links.map((item: any) => <ListView key={item.id} links={item}/>)
       return (
         <div>
           {listComponents}
