@@ -1,7 +1,15 @@
 import * as React from 'react';
 import './style.css'
 
-export class SignIn extends React.Component {
+interface SignInProps {
+
+}
+
+interface SignInState {
+  
+}
+
+export class SignIn extends React.Component<SignInProps, SignInState> {
   public render() {
       return (
         <div className="signin">

@@ -5,7 +5,7 @@ import { NavLink, } from 'react-router-dom'
 export class NavBar extends React.Component{
     public render(){
         return(
-            <div>
+            <div className="navbar">
                 <ul>
                 <NavLink to="/" activeClassName="active"><li>Home</li></NavLink>
                 <NavLink to="/sign_up" activeClassName="active"><li style={{float: "right"}}>Sign Up</li></NavLink>

@@ -1,4 +1,4 @@
-const links = [
+export const links = [
     {
         id: 1,
         title: "Linux hunble book bundle",
@@ -31,5 +31,3 @@ const links = [
     }
     
 ]
-
-export default links;
