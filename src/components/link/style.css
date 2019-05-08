@@ -4,16 +4,24 @@ body{
 }
 
 .links{
+    height: 10em;
     background-color: white;
     border: 0.1em solid rgb(139, 139, 139);
-    border-radius: 1em;
-    padding: .3em 2em;
+    border-radius: .3em;
+    padding: .3em .3em;
     margin: 1em;
-    margin-left: 3em;
-    width: 50%;
+    margin-left: 2em;
+    width: 57%;
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.3em;
+    
+
 }
 li{
     list-style-type: none;
 }
+.title{
+    font-size: 2em;
+    text-align: left;
+}
+
