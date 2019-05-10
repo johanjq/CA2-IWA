@@ -3,6 +3,7 @@ import { ListView } from '../listview/ListView'
 import './style.css'
 import { Vote } from '../vote/Vote'
 import { Link } from 'react-router-dom'
+import { getAuthToken } from '../with_auth/with_auth'
 
 interface LinkProps{
 
@@ -38,7 +39,8 @@ export class Links extends React.Component<LinkProps, LinksState>{
       return <div>Loading...</div>
     }else{
       return <div>
-        {this._renderPrivate()}
+        {/*this._renderPrivate()*/}
+        
         <ListView
        links={this.state.links.map((link) => {
           return <div className="links">
@@ -51,12 +53,15 @@ export class Links extends React.Component<LinkProps, LinksState>{
       </div>;
     }
   }
+
+  /*
   private _renderPrivate(){
     const token: string | undefined = (window as any).__token;
     if(typeof token === "string"){
-      return <Link style={{color: "black"}} to="/profile">Profile</Link>
+      return <Link className="profileButton" to="/profile">My Profile</Link>
     }
   }
+  */
 }
 
 async function getData(){

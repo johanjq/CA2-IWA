@@ -2,6 +2,7 @@ import * as React from "react";
 import * as joi from "joi";
 import { withRouter } from "react-router-dom";
 import * as H from 'history';
+import { setAuthToken } from "../with_auth/with_auth"
 import "./style.css";
 
 const credentialSchema = {
@@ -63,10 +64,10 @@ export class LoginInternal extends React.Component<SignInProps, SignInState> {
         }, credentialSchema);
         if (validationResult.error) {
             return <div>
-                {validationResult.error.details.map(d => <div>{d.message}</div>)}
+                {validationResult.error.details.map(d => <div className="wrongMessage">{d.message}</div>)}
             </div>;
         } else {
-            return <div>OK!</div>;
+            return <div className="okMessage">OK!</div>;
         }
     }
     // Update the state (email) on keyup
@@ -85,7 +86,8 @@ export class LoginInternal extends React.Component<SignInProps, SignInState> {
                 // Reset error
                 this.setState({ error: null });
                 // Save token in window object
-                (window as any).__token = token;
+                //(window as any).__token = token;
+                setAuthToken(token);
                 // Redirect to home page
                 this.props.history.push("/");
             } catch(err) {
@@ -101,7 +103,7 @@ export class LoginInternal extends React.Component<SignInProps, SignInState> {
 export const Login = withRouter(props => <LoginInternal {...props}/>);
 
 async function getToken(email: string, password: string) {
-    return new Promise(function (resolve, reject) {
+    return new Promise<string>(function (resolve, reject) {
         (async () => {
             const data = {
                 email: email,

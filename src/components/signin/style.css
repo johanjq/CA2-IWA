@@ -50,5 +50,21 @@ button {
 }
 button:hover:not(.active) {
     background-color: #4CAF50;
-  }
+}
+.okMessage{
+    color: white;
+    background-color: rgb(56, 172, 56);
+    border: 2px solid rgb(0, 141, 0);
+    border-radius: .5em;
+    padding: .3em;
+    text-align: center;
+}
+.wrongMessage{
+    color: white;
+    background-color: rgb(209, 45, 45);
+    border: 2px solid rgb(209, 16, 16);
+    border-radius: .5em;
+    padding: .3em;
+    text-align: center;
+}
 

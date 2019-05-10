@@ -1,0 +1,31 @@
+.rightPane{
+    width: 25%;
+    height: 25em;
+    background-color: white;
+    float: right;
+    margin: 2.5em 4em 3em 0;
+    border: 0.1em solid rgb(139, 139, 139);
+    border-radius: .5em;
+
+}
+.rightPane img{
+    width: 8em;
+    height: 8em;
+    margin: 2em;
+    float: left;
+    border-radius: 2em;
+}
+.name{
+    text-transform: capitalize;
+    clear: both;
+    margin: 0 0 1em .6em;
+    font-family: 'Lucida Sans';
+    font-size: 1.5em;
+}
+.bio{
+    clear: both;
+    margin: .8em;
+    font-family: 'Lucida Sans';
+    font-size: 1.2em;
+
+}

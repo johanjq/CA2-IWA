@@ -1,9 +1,12 @@
 import React from 'react';
+import './style.css'
+import { Links } from '../link/links'
 
 interface User {
     email: string;
     id: number;
     pic: any;
+    bio: string;
 }
 
 interface ProfileProps {}
@@ -36,10 +39,22 @@ export class Profile extends React.Component<ProfileProps, ProfileState>{
         }
         else{
             return <div>
-            {this.state.user.email.substring(0, this.state.user.email.indexOf('@'))}
-            {this.state.user.id}
-            <img src={this.state.user.pic} alt=""/>
-            </div>
+                    
+                    
+                    
+                    <div className="rightPane">
+                        <div className="imgDisplay">
+                            <img src={this.state.user.pic} alt=""/>
+                        </div>
+                        <div className="name">
+                        Username: {this.state.user.email.substring(0, this.state.user.email.indexOf('@'))}
+                        </div>
+                        <div className="bio">
+                        {this.state.user.bio} 
+                        </div>
+                    </div>
+                    <Links/>
+                    </div>
         }
     }
 }
@@ -58,6 +73,7 @@ async function getUser(token: string) {
     const json = await response.json();
     return json;
 }
+
 
 
 

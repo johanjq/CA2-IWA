@@ -5,7 +5,7 @@ import { LinkDetails } from "./components/LinkDetails";
 import { LinkEditor } from "./components/LinkEditor.";
 import { LoginInternal } from "./components/signin/SignIn";
 import { SignUp } from "./components/signup/SignUp";
-import { Profile } from "./components/Profile";
+import { Profile } from "./components/profile/Profile";
 import { NavBar } from './components/header/Header'
 
 
