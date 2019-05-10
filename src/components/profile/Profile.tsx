@@ -39,9 +39,6 @@ export class Profile extends React.Component<ProfileProps, ProfileState>{
         }
         else{
             return <div>
-                    
-                    
-                    
                     <div className="rightPane">
                         <div className="imgDisplay">
                             <img src={this.state.user.pic} alt=""/>

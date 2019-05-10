@@ -48,9 +48,6 @@ button {
     border-radius: 5px; 
     margin-top: 1em;
 }
-button:hover:not(.active) {
-    background-color: #4CAF50;
-}
 .okMessage{
     color: white;
     background-color: rgb(56, 172, 56);

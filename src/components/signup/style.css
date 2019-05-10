@@ -47,8 +47,6 @@ button {
     border: 0px;
     border-radius: 5px; 
 }
-button:hover:not(.active) {
-    background-color: #4CAF50;
-  }
+
 
 
