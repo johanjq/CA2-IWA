@@ -2,12 +2,13 @@ import React from 'react';
 import { ListView } from '../listview/ListView'
 import './style.css'
 import { Vote } from '../vote/Vote'
+import { Link } from 'react-router-dom'
 
 interface LinkProps{
 
 }
 
-interface Links {
+interface LinksItem {
   userId: number,
   id: number,
   title: string,
@@ -15,10 +16,10 @@ interface Links {
 }
 
 interface LinksState{
-  links: Links[] | null;
+  links: LinksItem[] | null;
 }
 
-export class Link extends React.Component<LinkProps, LinksState>{
+export class Links extends React.Component<LinkProps, LinksState>{
   public constructor(props: LinkProps){
     super(props);
     this.state = {
@@ -37,6 +38,7 @@ export class Link extends React.Component<LinkProps, LinksState>{
       return <div>Loading...</div>
     }else{
       return <div>
+        {this._renderPrivate()}
         <ListView
        links={this.state.links.map((link) => {
           return <div className="links">
@@ -46,7 +48,13 @@ export class Link extends React.Component<LinkProps, LinksState>{
           </div>
       })}
       />
-      </div>
+      </div>;
+    }
+  }
+  private _renderPrivate(){
+    const token: string | undefined = (window as any).__token;
+    if(typeof token === "string"){
+      return <Link style={{color: "black"}} to="/profile">Profile</Link>
     }
   }
 }
@@ -61,5 +69,5 @@ async function getData(){
     }
     );
   const json = await response.json();
-  return json as Links[];
+  return json as LinksItem[];
 }

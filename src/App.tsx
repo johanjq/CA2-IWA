@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from 'react-router-dom';
-import { Link } from "./components/link/Link";
+import { Links } from "./components/link/links";
 import { LinkDetails } from "./components/LinkDetails";
 import { LinkEditor } from "./components/LinkEditor.";
 import { LoginInternal } from "./components/signin/SignIn";
@@ -14,7 +14,7 @@ const App: React.FC = () => {
     <div className="container">
       <NavBar/>
       <Switch>
-      <Route exact path='/' component={Link}/>
+      <Route exact path='/' component={Links}/>
       <Route exact path='/link_details/:id' component={LinkDetails}/>
       <Route exact path='/link_editor/' component={LinkEditor}/>
       <Route exact path='/link_editor/:id' component={LinkEditor}/>
