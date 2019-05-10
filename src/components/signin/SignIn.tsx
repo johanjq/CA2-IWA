@@ -2,7 +2,7 @@ import * as React from "react";
 import * as joi from "joi";
 import { withRouter } from "react-router-dom";
 import * as H from 'history';
-import { setAuthToken } from "../with_auth/with_auth"
+import { setAuthToken } from "../with_auth/with_auth" 
 import "./style.css";
 
 const credentialSchema = {
@@ -32,7 +32,7 @@ export class LoginInternal extends React.Component<SignInProps, SignInState> {
     public render() {
         return (
             <div className="signin">
-                <h2>Sign In</h2>
+                <h3>Sign In</h3>
                 <input
                     type="text"
                     placeholder="Email"

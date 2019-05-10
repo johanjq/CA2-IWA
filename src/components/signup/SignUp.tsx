@@ -6,7 +6,7 @@ export class SignUp extends React.Component {
       return (
         <div className="signup">
           <form>
-            <h2>Sign Up</h2>
+            <h3>Sign Up</h3>
             <input type="text" placeholder="Enter Username"/>
             <input type="text" placeholder="Enter Password"/>
             <button className="btn">Sign Up</button>
