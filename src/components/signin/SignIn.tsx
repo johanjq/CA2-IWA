@@ -32,7 +32,7 @@ export class LoginInternal extends React.Component<SignInProps, SignInState> {
     public render() {
         return (
             <div className="signin">
-                <h3>Sign In</h3>
+                <h3>log in</h3>
                 <input
                     type="text"
                     placeholder="Email"

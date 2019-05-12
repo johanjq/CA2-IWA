@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-import { Links } from '../link/links'
+import { UserLinks } from '../userlinks/userlinks'
 
 interface User {
     email: string;
@@ -50,7 +50,7 @@ export class Profile extends React.Component<ProfileProps, ProfileState>{
                         {this.state.user.bio} 
                         </div>
                     </div>
-                    <Links/>
+                    <UserLinks/>
                     </div>
         }
     }

@@ -1,49 +1,9 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.links{
-    height: 10em;
-    background-color: white;
-    border: 1px solid rgb(189, 189, 189);
-    border-radius: .3em;
-    padding: .8em .3em;
-    margin: 1.2em;
-    margin-left: 9em;
-    width: 48%;
-    text-align: justify;
-    font-size: 1em;
-}
-.links a {
-    color: rgb(41, 80, 255);
-    font-family: 'Lucida Sans';
-    font-size: .8em;
-    text-decoration: none;
-}
-.links a:hover {
-    text-decoration: underline;
-}
-li{
-    list-style-type: none;
-}
-.title{
-    font-size: 2em;
-    text-align: left;
-}
-.search {
-    background-color: white;
-    width: 47%;
-    height: 2.5em;
-    margin: 1.5em 0 0 13em;
-}
-
 /* ------------- BOX FO LINK DETAILS -------------------*/
 
 .link-details {
     border: 1px solid #000000;
     margin-bottom: 20px;
-    width: 65%;
+    width: 80%;
     -webkit-box-shadow: 0px 4px 6px -3px rgba(0,0,0,1);
     -moz-box-shadow: 0px 4px 6px -3px rgba(0,0,0,1);
     box-shadow: 0px 4px 6px -3px rgba(0,0,0,1);
@@ -97,4 +57,6 @@ li{
   .comment-details .right {
     padding: 10px;
   }
+  
+  
   

@@ -1,0 +1,30 @@
+.community {
+  width: 24%;
+  height: 15em;
+  float: right;
+  margin: 0 3em 0 1em;
+  background-color: white;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 0.3em;
+}
+.editor {
+  float: left;
+}
+.totalUsers {
+  float: right;
+}
+.createPost {
+  width: 15em;
+  height: 2.5em;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Lucida Sans";
+  margin-top: 14em;
+
+  border: 2px solid rgb(41, 80, 255);
+  background-color: rgb(41, 80, 255);
+
+  color: white;
+  margin-left: 2.5em;
+}

@@ -59,13 +59,9 @@ button {
     border-radius: .5em;
     padding: .3em;
     text-align: center;
-    margin-left: 2.2em;
-    width: 15em;
 }
 .wrongMessage{
     color: white;
-    width: 15em;
-    margin-left: 2.2em;
     background-color: rgb(209, 45, 45);
     border: 2px solid rgb(209, 16, 16);
     border-radius: .5em;
