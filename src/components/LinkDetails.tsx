@@ -8,7 +8,7 @@ export interface LinkPreviewDetails {
     email: string; // user email
     title: string; // link title 
     url: string; // url that redirect to the link site 
-    dateTime: string,
+    dateTime: string, 
     commentCount: number | null; // number of comments for the link 
     voteCount: number | null; // number of votes for the link 
 }

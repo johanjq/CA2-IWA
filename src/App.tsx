@@ -1,8 +1,7 @@
 import React from "react";
 import { Route, Switch } from 'react-router-dom';
 import { Links } from "./components/link/links";
-import { LinkDetails } from "./components/LinkDetails";
-import { LinkEditor } from "./components/LinkEditor";
+import { LinkDetails } from './components/link_details/link_details'
 import { LoginInternal } from "./components/signin/SignIn";
 import { SignUp } from "./components/signup/SignUp";
 import { Profile } from "./components/profile/Profile";
